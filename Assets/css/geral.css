@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+ @font-face {
+    font-family: 'NeueMachina';
+    src: url('/assets/fonts/NeueMachina-Regular.otf');
+    
+}
+
+body{
+    background-image: linear-gradient(to left, #0c8900,black, black,black,black, #39ff13);
+    background-size: 500% 100%;
+    animation: degrade-animado 8s infinite  alternate  ;
+    color: white;
+}
+.cabecalho{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}

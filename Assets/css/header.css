@@ -1,0 +1,76 @@
+ .principal .cabecalho{
+    background-image: linear-gradient( 45deg, #0c8900,black, black,black,black, #39ff13);
+    background-size: 500% 100%;
+    animation: degrade-animado 8s infinite  alternate  ;
+ }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .Titulo {
+    text-align: center;
+    font-family: 'NeueMachina';
+    margin-bottom: 0;
+     
+}
+.header .Titulo h1 {
+    margin-bottom: 0;
+}
+
+.header .Titulo h3{
+    margin-top: .2rem;
+     
+     
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+    text-align: justify;
+}
+
+.informacoes p {
+    margin: 0.5rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+.informacoes p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;       
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;  
+    background-size: contain;
+    
+    
+}
+.informacoes .pessoa::before{
+    background-image: url('/assets/imagens/pessoa.svg');
+}
+.informacoes .local::before {
+    background-image: url('/assets/imagens/local.svg');
+}
+.informacoes .whatsapp::before{
+    background-image: url('/assets/imagens/whatsapp.svg');
+}
+.informacoes .email::before{
+    background-image: url('/assets/imagens/email.svg');
+}
