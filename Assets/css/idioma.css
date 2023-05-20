@@ -9,7 +9,7 @@
 }
 
 .idioma li {
-    padding: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
