@@ -39,16 +39,23 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("/Assets/imagens/icons/arrow-top.svg");
+    transition: .25s ;
 }
 
 .acordeon.aberto .trigger::after{
     transform: rotate(180deg);
 }
 .acordeon .conteiner{
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
     
 }
 .acordeon.aberto .conteiner{
-    display: inline-block;
+    display: block;
+    height: auto;
+    opacity: 1;
+    padding: 0 1rem 1rem 2rem;
 
 }
