@@ -1,46 +1,33 @@
- .principal .cabecalho{
-    background-image: linear-gradient( 45deg, #0c8900,black, black,black,black, #39ff13);
-    background-size: 500% 100%;
-    animation: degrade-animado 8s infinite  alternate  ;
- }
 
+ 
+ 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.header .foto {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.header .foto {                     
+    width: 250px;
+    height: 250px;
+    
+    
 }
 
-.header .Titulo {
+.header .titulo {
     text-align: center;
     font-family: 'NeueMachina';
-    margin-bottom: 0;
-     
+    
 }
-.header .Titulo h1 {
-    margin-bottom: 0;
-}
-
-.header .Titulo h3{
-    margin-top: .2rem;
+ 
      
      
-}
-
+     
 .informacoes {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    position: relative;
-    
-    text-align: justify;
+    position: relative;    
 }
 
 .informacoes p {
@@ -63,14 +50,41 @@
     
 }
 .informacoes .pessoa::before{
-    background-image: url('/assets/imagens/pessoa.svg');
+    background-image: url('/assets/imagens/icons/pessoa.svg');
 }
 .informacoes .local::before {
-    background-image: url('/assets/imagens/local.svg');
+    background-image: url('/assets/imagens/icons/local.svg');
 }
 .informacoes .whatsapp::before{
-    background-image: url('/assets/imagens/whatsapp.svg');
+    background-image: url('/assets/imagens/icons/whatsapp.svg');
 }
 .informacoes .email::before{
-    background-image: url('/assets/imagens/email.svg');
+    background-image: url('/assets/imagens/icons/email.svg');
 }
+ 
+@media only screen and (min-width: 768px){
+    .header {
+        display: grid;
+        grid-template-areas: "foto titulo"
+        "foto informacoes";
+            
+    }
+
+    .header .foto{
+        grid-area: foto;
+        margin: 0 auto;
+    }
+
+    .header .titulo{
+        grid-area: titulo;
+        text-align: start;
+        max-width: 200px;
+
+    }
+
+    .header .informacoes{
+        grid-area: informacoes;
+    }
+    
+}
+

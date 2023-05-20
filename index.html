@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--Fontes-->
+    <!-- Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,32 +24,47 @@
     <!--Link para o Css-->
     <link rel="stylesheet" href="Assets/css/geral.css" />
     <link rel="stylesheet" href="Assets/css/header.css" />
+    <link rel="stylesheet" href="Assets/css/acordeon.css">
   </head>
   
   
   <body>
-    <div class="principal">
+   
     <div class="cabecalho">
       <header class="header">
         <img
-          src="Assets/imagens/foto-de-perifl.png"
+          src="Assets/imagens/fotodeperfil2.png"
           alt="Foto de Perfil"
           class="foto"
         />
 
-        <h1 class="Titulo">
-          Olá Sou Felipe Belmont <br />
+        <h1 class="titulo">
+          Olá,<br> Sou Felipe Belmont <br />
         </h1>
-        <h3 class="Titulo">Bem Vindo ao Meu Portifolio  </h3>
-
+       
         <div class="informacoes">
           <p class="pessoa" >Junior Developer</p>
           <p class="local">Araruama - RJ</p>
           <p class="whatsapp">22-98812-5002</p>
           <p class="email">belmontprogramador@gmail.com</p>
+       </header>
+
+       <section class="acordeon aberto">
+        
+        <button class="trigger" type="button">
+          Idiomas
+        </button>
+        
+        <div class="conteiner">
+          <ul>
+            <li>Português(Nativo)</li>
+            <li>Inglês(Basico)</li>
+          </ul>
         </div>
-      </div>
-      </header>
+
+       </section>
     </div>
+
+    <script src="Assets/js/acordeon.js"></script>
   </body>
 </html>

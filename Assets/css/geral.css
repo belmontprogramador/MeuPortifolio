@@ -9,17 +9,50 @@
 }
 
 body{
-    background-image: linear-gradient(to left, #0c8900,black, black,black,black, #39ff13);
-    background-size: 500% 100%;
-    animation: degrade-animado 8s infinite  alternate  ;
+   background-color: black;
     color: white;
+    
+     
 }
 .cabecalho{
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #fff;
     border-radius: 1rem;
-    background-color: rgb(0, 0, 0);
+    
+     
+}
+
+.cabecalho::before{
+    content: "";
+    background-image: url("/Assets/imagens/backgroundtop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140vw;
+    height: 100vh;
+    display: inline-block;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+.cabecalho::after{
+    content: "";
+    background-image: url("/Assets/imagens/backgroundtop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 140vh;
+    display: inline-block;
+    bottom: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+    
 }
 
 @keyframes degrade-animado {
@@ -30,3 +63,16 @@ body{
         background-position-x: 100%;
     }
 }
+
+@media only screen and (min-width: 768px){
+    .cabecalho{
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+
+
+
+
+
+}
+
