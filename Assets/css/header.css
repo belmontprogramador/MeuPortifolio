@@ -88,3 +88,15 @@
     
 }
 
+ .informacoes .whatsapp a{
+    color: #fff;
+    text-decoration: none;
+ }
+ .informacoes .email a{
+    color: #fff;
+    text-decoration: none;
+ }
+ .informacoes .pessoa a{
+    color: #fff;
+    text-decoration: none;
+ }
